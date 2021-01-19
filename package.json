@@ -1,0 +1,23 @@
+{
+  "name": "shop-pro",
+  "version": "1.0.0",
+  "description": "mern stack ecommerce",
+  "main": "server.js",
+  "scripts": {
+    "start":"node backend/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahidkishore/shop-pro.git"
+  },
+  "author": "nahidul islam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahidkishore/shop-pro/issues"
+  },
+  "homepage": "https://github.com/nahidkishore/shop-pro#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
