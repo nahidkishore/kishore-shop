@@ -8,6 +8,8 @@ node_modules/
 
 #env files
 .env
+# image 
+public/images
 
 # testing
 /coverage
