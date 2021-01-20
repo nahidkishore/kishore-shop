@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "mern stack ecommerce",
   "main": "server.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node backend/server",
     "server": "nodemon backend/server",
@@ -23,7 +23,8 @@
   "homepage": "https://github.com/nahidkishore/shop-pro#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.12"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
