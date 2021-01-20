@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node backend/server",
-    "server":"nodemon backend/server",
+    "server": "nodemon backend/server",
     "client": "npm start --prefix frontend",
-    "dev":"concurrently \"npm run server\" \"npm run client\"",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/nahidkishore/shop-pro#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "devDependencies": {

@@ -169,6 +169,45 @@ const products=[
     rating: 4.3,
     numReviews: 5,
   },
+  {
+    _id: '14',
+    name: 'AirMax Shoes',
+    image: '/images/shoes/shoe-3.png',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam illo incidunt earum porro mollitia quos ipsam totam? Iusto nobis ipsa cumque totam officiis doloremque. Ea a perferendis facere. Culpa.',
+    brand: 'AirMax',
+    category: 'Shoes',
+    price: 70.99,
+    countInStock: 20,
+    rating: 4.9,
+    numReviews: 8,
+  },
+  {
+    _id: '15',
+    name: 'Zoom Shoe',
+    image: '/images/shoes/shoe-2.png',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam illo incidunt earum porro mollitia quos ipsam totam? Iusto nobis ipsa cumque totam officiis doloremque. Ea a perferendis facere. Culpa.',
+    brand: 'Nike',
+    category: 'Shoes',
+    price: 78.99,
+    countInStock: 14,
+    rating: 4.6,
+    numReviews: 8,
+  },
+  {
+    _id: '16',
+    name: 'Sply 350',
+    image: '/images/shoes/shoe-2.png',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam illo incidunt earum porro mollitia quos ipsam totam? Iusto nobis ipsa cumque totam officiis doloremque. Ea a perferendis facere. Culpa.',
+    brand: 'Nike',
+    category: 'Shoes',
+    price: 49.99,
+    countInStock: 10,
+    rating: 4.2,
+    numReviews: 6,
+  },
 
 
 ]
