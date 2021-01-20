@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Card, Col, Image, ListGroup, Row } from 'react-bootstrap';
 import { Link, useParams } from 'react-router-dom';
-import products from '../../../../products';
 import Rating from '../Rating';
-
+import axios from 'axios';
 const ProductDetails = ({ match }) => {
   const { id } = useParams();
-  const product = products.find((p) => p._id === id);
-  console.log(product);
+  const [product, setProduct] = useState({});
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const { data } = await axios.get(`/api/products/${id}`);
+      setProduct(data);
+    };
+    fetchProduct();
+  }, []);
   return (
     <>
       <Link className='btn btn-light my-3' to='/'>
@@ -40,25 +45,31 @@ const ProductDetails = ({ match }) => {
         </Col>
         <Col md={3}>
           <Card>
-            <ListGroup variant="flush">
+            <ListGroup variant='flush'>
               <ListGroup.Item>
                 <Row>
+                  <Col>Price:</Col>
                   <Col>
-                  Price:
+                    <strong>{product.price}</strong>
                   </Col>
-                  <Col><strong>{product.price}</strong></Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
+                  <Col>Status:</Col>
                   <Col>
-                  Status:
+                    {product.countInStock > 0 ? 'In Stock' : 'Out OF Stock'}
                   </Col>
-                  <Col>{product.countInStock>0?'In Stock':'Out OF Stock'}</Col>
                 </Row>
               </ListGroup.Item>
               <ListGroup.Item>
-                <Button className="btn-block" type="button" disabled={product.countInStock===0}>Add To Cart</Button>
+                <Button
+                  className='btn-block'
+                  type='button'
+                  disabled={product.countInStock === 0}
+                >
+                  Add To Cart
+                </Button>
               </ListGroup.Item>
             </ListGroup>
           </Card>
