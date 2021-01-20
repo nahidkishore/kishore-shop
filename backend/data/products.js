@@ -41,7 +41,7 @@ const products=[
   {
     _id: '4',
     name: 'Mens Red Jackets',
-    image: '/images/vippng 1.png',
+    image: '/images/vippng-1.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam illo incidunt earum porro mollitia quos ipsam totam? Iusto nobis ipsa cumque totam officiis doloremque. Ea a perferendis facere. Culpa.',
     brand: 'Top ten',
@@ -54,7 +54,7 @@ const products=[
   {
     _id: '5',
     name: 'Girls Jackets',
-    image: '/images/SeekPng 1.png',
+    image: '/images/SeekPng-1.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam illo incidunt earum porro mollitia quos ipsam totam? Iusto nobis ipsa cumque totam officiis doloremque. Ea a perferendis facere. Culpa.',
     brand: 'Yellow',
@@ -67,7 +67,7 @@ const products=[
   {
     _id: '6',
     name: 'Super bag',
-    image: '/images/image 16.png',
+    image: '/images/image-16.png',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam illo incidunt earum porro mollitia quos ipsam totam? Iusto nobis ipsa cumque totam officiis doloremque. Ea a perferendis facere. Culpa.',
     brand: 'Xiaomi',

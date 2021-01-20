@@ -12,7 +12,7 @@ const ProductDetails = ({ match }) => {
       setProduct(data);
     };
     fetchProduct();
-  }, []);
+  }, [id]);
   return (
     <>
       <Link className='btn btn-light my-3' to='/'>

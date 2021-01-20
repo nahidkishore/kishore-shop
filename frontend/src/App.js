@@ -4,9 +4,8 @@ import { Container } from 'react-bootstrap';
 import Home from './components/pages/Home/Home';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
+
 } from "react-router-dom";
 import ProductDetails from './components/pages/Home/Product/ProductDetails';
 const App = () => {
