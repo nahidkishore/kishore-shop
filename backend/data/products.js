@@ -1,6 +1,6 @@
 const products=[
   {
-    _id: '1',
+    
     name: 'HP Laptop',
     image: '/images/laptop/product-1.png',
     description:
@@ -13,7 +13,7 @@ const products=[
     numReviews: 15,
   },
   {
-    _id: '2',
+    
     name: 'Asus Laptop',
     image: '/images/laptop/product-2.png',
     description:
@@ -26,7 +26,7 @@ const products=[
     numReviews: 10,
   },
   {
-    _id: '3',
+   
     name: 'Dell Laptop',
     image: '/images/laptop/product-3.png',
     description:
@@ -39,7 +39,7 @@ const products=[
     numReviews: 15,
   },
   {
-    _id: '4',
+   
     name: 'Mens Red Jackets',
     image: '/images/vippng-1.png',
     description:
@@ -52,7 +52,7 @@ const products=[
     numReviews: 5,
   },
   {
-    _id: '5',
+  
     name: 'Girls Jackets',
     image: '/images/SeekPng-1.png',
     description:
@@ -65,7 +65,7 @@ const products=[
     numReviews: 7,
   },
   {
-    _id: '6',
+    
     name: 'Super bag',
     image: '/images/image-16.png',
     description:
@@ -79,7 +79,7 @@ const products=[
   },
   
   {
-    _id: '7',
+    
     name: 'Samsung S8+',
     image: '/images/phone/phone-1.png',
     description:
@@ -92,7 +92,7 @@ const products=[
     numReviews: 9,
   },
   {
-    _id: '8',
+   
     name: 'Samsung S10',
     image: '/images/phone/phone-3.png',
     description:
@@ -105,7 +105,7 @@ const products=[
     numReviews: 10,
   },
   {
-    _id: '9',
+   
     name: 'iphone pro 11',
     image: '/images/phone/phone-2.png',
     description:
@@ -118,7 +118,7 @@ const products=[
     numReviews: 9,
   },
   {
-    _id: '10',
+   
     name: 'Samsung S7+',
     image: '/images/phone/phone-1.png',
     description:
@@ -131,7 +131,7 @@ const products=[
     numReviews: 8,
   },
   {
-    _id: '11',
+   
     name: 'Mens Red Bag',
     image: '/images/bags/bag-1.png',
     description:
@@ -144,7 +144,7 @@ const products=[
     numReviews: 11,
   },
   {
-    _id: '12',
+   
     name: 'Black bag',
     image: '/images/bags/bag-3.png',
     description:
@@ -157,7 +157,7 @@ const products=[
     numReviews: 10,
   },
   {
-    _id: '13',
+    
     name: 'super Bags',
     image: '/images/bags/bag-2.png',
     description:
@@ -170,7 +170,7 @@ const products=[
     numReviews: 5,
   },
   {
-    _id: '14',
+  
     name: 'AirMax Shoes',
     image: '/images/shoes/shoe-3.png',
     description:
@@ -183,7 +183,7 @@ const products=[
     numReviews: 8,
   },
   {
-    _id: '15',
+    
     name: 'Zoom Shoe',
     image: '/images/shoes/shoe-2.png',
     description:
@@ -196,7 +196,7 @@ const products=[
     numReviews: 8,
   },
   {
-    _id: '16',
+   
     name: 'Sply 350',
     image: '/images/shoes/shoe-2.png',
     description:
