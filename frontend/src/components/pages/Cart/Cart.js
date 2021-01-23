@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Message from '../LoadingAndMessage/Message';
-import { addToCart } from '../../../actions/cartActions';
+import { addToCart,removeFromCart } from '../../../actions/cartActions';
 import { Link, useHistory, useLocation, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -32,7 +32,7 @@ const Cart = () => {
   }, [dispatch, productId, qty]);
 
   const removeFromCartHandler = (id) => {
-    console.log('remove');
+dispatch(removeFromCart(id))
   };
   const checkoutHandler = () => {
     console.log('checkout');
@@ -40,7 +40,7 @@ const Cart = () => {
   };
   return (
     <Row>
-      <Col md={8}>
+      <Col md={8} sm={6}>
         <h1 className='text-center mb-5'>Shopping Cart</h1>
         {cartItems.length === 0 ? (
           <Message>
@@ -90,7 +90,7 @@ const Cart = () => {
           </ListGroup>
         )}
       </Col>
-      <Col md={4}>
+      <Col md={4} sm={6}>
         <Card>
           <ListGroup variant='flush'>
             <ListGroup.Item>
