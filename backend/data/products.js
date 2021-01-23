@@ -47,7 +47,7 @@ const products=[
     brand: 'Top ten',
     category: 'clothes',
     price: 99.99,
-    countInStock: 7,
+    countInStock: 0,
     rating: 3.9,
     numReviews: 5,
   },

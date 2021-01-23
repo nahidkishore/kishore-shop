@@ -8,6 +8,7 @@ import {
 
 } from "react-router-dom";
 import ProductDetails from './components/pages/Home/Product/ProductDetails';
+import Cart from './components/pages/Cart/Cart';
 const App = () => {
   return (
     <Router>
@@ -21,6 +22,10 @@ const App = () => {
          <Route path="/product/:id">
            <ProductDetails></ProductDetails>
          </Route>
+         
+         <Route path="/cart/:id?"> 
+           <Cart></Cart>
+         </Route>
         </Container>
       </main>
       <Footer></Footer>
@@ -29,3 +34,4 @@ const App = () => {
 };
 
 export default App;
+// "/cart/:id?" eitar question(?) mane cart component is optional, normally cart section e jaoya jabe,abar id number soho kono item add koreo jaoya jabe 
