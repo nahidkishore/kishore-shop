@@ -64,7 +64,7 @@ const ProductDetails = () => {
               </ListGroup.Item>
               <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
               <ListGroup.Item>
-                Description: {product.description}
+                <h6>Description:</h6> {product.description}
               </ListGroup.Item>
             </ListGroup>
           </Col>
