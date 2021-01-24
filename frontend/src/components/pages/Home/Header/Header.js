@@ -10,7 +10,8 @@ import {
 } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
-import { logout } from '../../../actions/userActions';
+import { logout } from '../../../../actions/userActions';
+
 const Header = () => {
   const dispatch = useDispatch();
   const userLogin = useSelector((state) => state.userLogin);

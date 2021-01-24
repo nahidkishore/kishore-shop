@@ -4,9 +4,10 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import { login } from '../../../actions/userActions';
-import FormContainer from '../FormContainer';
+
 import Message from '../LoadingAndMessage/Message';
 import Loading from '../LoadingAndMessage/Loader';
+import FormContainer from './FormContainer';
 
 const Login = () => {
   const history = useHistory();
