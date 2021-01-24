@@ -1,6 +1,7 @@
 
 # Shop Pro 
 
+#### continue working this project, I hope within 3days complete this project.
 
 ## features
 
