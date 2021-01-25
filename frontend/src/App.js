@@ -4,9 +4,11 @@ import { Container } from 'react-bootstrap';
 import Home from './components/pages/Home/Home';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ProductDetails from './components/pages/Home/Product/ProductDetails';
-import Cart from './components/pages/Cart/Cart';
+
 import Login from './components/pages/Auth/Login';
 import Register from './components/pages/Auth/Register';
+import ProfileScreen from './screens/ProfileScreen';
+import CartScreen from './screens/CartScreen';
 
 const App = () => {
   return (
@@ -14,11 +16,14 @@ const App = () => {
       <Header></Header>
       <main className='py-3'>
         <Container>
+          <Route path='/login'>
+            <Login></Login>
+          </Route>
           <Route path='/register'>
             <Register></Register>
           </Route>
-          <Route path='/login'>
-            <Login></Login>
+          <Route path='/profile'>
+            <ProfileScreen></ProfileScreen>
           </Route>
 
           <Route path='/product/:id'>
@@ -26,7 +31,7 @@ const App = () => {
           </Route>
 
           <Route path='/cart/:id?'>
-            <Cart></Cart>
+            <CartScreen></CartScreen>
           </Route>
           <Route exact path='/'>
             <Home></Home>

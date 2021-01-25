@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
-import Message from '../LoadingAndMessage/Message';
-import { addToCart,removeFromCart } from '../../../actions/cartActions';
+import Message from '../components/pages/LoadingAndMessage/Message';
+
+import { addToCart,removeFromCart } from '../actions/cartActions';
 import { Link, useHistory, useLocation, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -13,7 +14,7 @@ import {
   Row,
 } from 'react-bootstrap';
 
-const Cart = () => {
+const CartScreen = () => {
   const location = useLocation();
   const history = useHistory();
   const { id } = useParams();
@@ -122,4 +123,4 @@ dispatch(removeFromCart(id))
   );
 };
 
-export default Cart;
+export default CartScreen;
