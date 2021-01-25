@@ -10,6 +10,7 @@ import Register from './components/pages/Auth/Register';
 import ProfileScreen from './screens/ProfileScreen';
 import CartScreen from './screens/CartScreen';
 import ShippingScreen from './screens/ShippingScreen';
+import PaymentScreen from './screens/PaymentScreen';
 
 const App = () => {
   return (
@@ -19,6 +20,9 @@ const App = () => {
         <Container>
           <Route path='/shipping'>
             <ShippingScreen></ShippingScreen>
+          </Route>
+          <Route path='/payment'>
+            <PaymentScreen></PaymentScreen>
           </Route>
           <Route path='/login'>
             <Login></Login>
