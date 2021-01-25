@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 
-import {  useHistory, useLocation } from 'react-router-dom';
+import {  useHistory} from 'react-router-dom';
 
 
 import Message from '../components/pages/LoadingAndMessage/Message';
@@ -12,7 +12,6 @@ import { getUserDetails,updateUserProfile } from '../actions/userActions';
 
 const ProfileScreen = () => {
   const history = useHistory();
-  const location = useLocation();
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
