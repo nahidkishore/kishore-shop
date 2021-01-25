@@ -7,7 +7,7 @@ import {  useHistory, useLocation } from 'react-router-dom';
 
 import Message from '../components/pages/LoadingAndMessage/Message';
 import Loading from '../components/pages/LoadingAndMessage/Loader';
-import { getUserDetails } from '../actions/userActions';
+import { getUserDetails,updateUserProfile } from '../actions/userActions';
 
 
 const ProfileScreen = () => {
@@ -26,6 +26,8 @@ const ProfileScreen = () => {
 
   const userLogin = useSelector((state) => state.userLogin);
   const {  userInfo } = userLogin;
+  const userUpdateProfile = useSelector((state) => state.userUpdateProfile);
+  const {  success } = userUpdateProfile
 
   useEffect(() => {
     if (!userInfo) {
@@ -47,6 +49,7 @@ setEmail(user.email)
       setMessage('Password dot not match');
     } else {
      //dispatch update profile
+     dispatch(updateUserProfile({id: user._id,name,email,password}))
     }
   };
   return (
@@ -55,6 +58,7 @@ setEmail(user.email)
       <h2>User Profile</h2>
       {message && <Message variant='danger'>{message}</Message>}
       {error && <Message variant='danger'>{error}</Message>}
+      {success && <Message variant='success'>Profile updated</Message>}
       {loading && <Loading></Loading>}
       <Form onSubmit={submitHandler}>
         <Form.Group controlId='name'>
