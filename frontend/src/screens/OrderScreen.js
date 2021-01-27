@@ -28,7 +28,7 @@ const OrderScreen = () => {
   
   useEffect(() => {
     dispatch(getOrderDetails(orderId));
-  }, []);
+  }, [dispatch,orderId]);
 
   return loading ? <Loader />: error ?  <Message variant='danger'>{error}</Message> : 
   
@@ -59,7 +59,7 @@ const OrderScreen = () => {
               </p>
 
               {order.isPaid? <Message variant="success">Paid on {order.paidAt}</Message>:<Message variant="danger">Not Paid</Message>}
-              
+
             </ListGroup.Item>
 
             <ListGroup.Item>
