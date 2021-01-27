@@ -42,7 +42,8 @@
 ![productDetails](https://user-images.githubusercontent.com/39863835/105643228-c4949f80-5eb8-11eb-8800-16a8ddfb8276.jpg)
 ![shopping_cart](https://user-images.githubusercontent.com/39863835/105643232-c9f1ea00-5eb8-11eb-9bcb-a70c423fccb0.jpg)
 ![profile](https://user-images.githubusercontent.com/39863835/106038585-56dbb400-6102-11eb-8b5a-1f6431f7097f.jpg)
-![payment](https://user-images.githubusercontent.com/39863835/106038605-5ba06800-6102-11eb-953b-fc7b9c8cfbb5.jpg)
+![payment_method](https://user-images.githubusercontent.com/39863835/106039051-d9fd0a00-6102-11eb-9ac2-a2f73719a2fc.jpg)
+
 
 ![register](https://user-images.githubusercontent.com/39863835/105643239-ceb69e00-5eb8-11eb-954f-ebe731a1a5fd.jpg)
 ![login](https://user-images.githubusercontent.com/39863835/105643241-d24a2500-5eb8-11eb-855b-a988ff7bdbff.jpg)
