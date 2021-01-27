@@ -22,7 +22,7 @@ const ProductDetails = () => {
   const dispatch = useDispatch();
   const productDetails = useSelector((state) => state.productDetails);
   const { loading, error, product } = productDetails;
-  console.log(productDetails);
+  //console.log(productDetails);
 
   useEffect(() => {
     dispatch(listProductDetails(`${id}`));
