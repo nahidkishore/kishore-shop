@@ -15,6 +15,7 @@ const authUser = asyncHandler(async (req, res) => {
       email: user.email,
       isAdmin: user.isAdmin,
       token: generateToken(user._id),
+     
     });
   } else {
     res.status(401);
@@ -99,8 +100,7 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 
 const getUsers = asyncHandler(async (req, res) => {
   const users = await User.find({});
-  res.json(users)
- 
+  res.json(users);
 });
 
 
