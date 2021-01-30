@@ -23,6 +23,7 @@ import {
   PRODUCT_UPDATE_REQUEST,
   PRODUCT_UPDATE_SUCCESS,
 } from '../constants/productConstants';
+import { logout } from './userActions';
 
 
 export const listProducts = (keyword=' ',pageNumber='') => async (dispatch) => {
@@ -90,12 +91,17 @@ export const deleteProduct = (id) => async (dispatch, getState) => {
     });
     
   } catch (error) {
+    
+    const message =
+    error.response && error.response.data.message
+      ? error.response.data.message
+      : error.message
+  if (message === 'Not authorized, token failed') {
+    dispatch(logout())
+  }
     dispatch({
       type: PRODUCT_DELETE_FAIL,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
+      payload:message
     });
   }
 };
@@ -124,12 +130,16 @@ export const createProduct = () => async (dispatch, getState) => {
     });
     
   } catch (error) {
+    const message =
+      error.response && error.response.data.message
+        ? error.response.data.message
+        : error.message
+    if (message === 'Not authorized, token failed') {
+      dispatch(logout())
+    }
     dispatch({
       type: PRODUCT_CREATE_FAIL,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
+      payload:message
     });
   }
 };
@@ -158,12 +168,16 @@ export const updateProduct = (product) => async (dispatch, getState) => {
     });
     
   } catch (error) {
+    const message =
+      error.response && error.response.data.message
+        ? error.response.data.message
+        : error.message
+    if (message === 'Not authorized, token failed') {
+      dispatch(logout())
+    }
     dispatch({
       type: PRODUCT_UPDATE_FAIL,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
+      payload:message
     });
   }
 };
@@ -192,12 +206,16 @@ export const createProductReview = (productId,review) => async (dispatch, getSta
     });
     
   } catch (error) {
+    const message =
+      error.response && error.response.data.message
+        ? error.response.data.message
+        : error.message
+    if (message === 'Not authorized, token failed') {
+      dispatch(logout())
+    }
     dispatch({
       type: PRODUCT_CREATE_REVIEW_FAIL,
-      payload:
-        error.response && error.response.data.message
-          ? error.response.data.message
-          : error.message,
+      payload:message
     });
   }
 };
@@ -209,12 +227,13 @@ export const listTopProducts = () => async (dispatch) => {
 
     dispatch({ type: PRODUCT_TOP_SUCCESS, payload: data });
   } catch (error) {
+    
     dispatch({
       type: PRODUCT_TOP_FAIL,
       payload:
         error.response && error.response.data.message
           ? error.response.data.message
           : error.message,
-    });
+    })
   }
 };

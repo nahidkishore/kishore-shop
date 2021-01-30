@@ -8,7 +8,7 @@ import Message from '../LoadingAndMessage/Message';
 import { Link, useParams } from 'react-router-dom';
 import Paginate from '../Paginate/Paginate';
 import ProductCarousel from '../ProductCarousel/ProductCarousel';
-import { Helmet } from 'react-helmet';
+
 import Meta from '../Meta/Meta';
 const Home = () => {
   const { keyword, pageNumber } = useParams();

@@ -76,7 +76,7 @@ const ProductDetails = () => {
         <Message variant='danger'>{error}</Message>
       ) : (
         <>
-        <Meta title={product.name}/>
+          <Meta title={product.name} />
           <Row>
             <Col md={6}>
               <Image
