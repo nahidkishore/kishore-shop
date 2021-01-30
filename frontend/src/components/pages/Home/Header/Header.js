@@ -11,6 +11,7 @@ import {
 import { LinkContainer } from 'react-router-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { logout } from '../../../../actions/userActions';
+import SearchBox from '../../SearchBox/SearchBox';
 
 const Header = () => {
   const dispatch = useDispatch();
@@ -30,14 +31,15 @@ const Header = () => {
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
-            <Form inline>
+      {/*       <Form inline>
               <FormControl
                 type='text'
                 placeholder='Search'
                 className='mr-sm-2'
               />
               <Button variant='outline-success'>Search</Button>
-            </Form>
+            </Form> */}
+            <SearchBox/>
             <Nav className='ml-auto'>
               <LinkContainer to='/cart'>
                 <Nav.Link>

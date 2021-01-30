@@ -69,7 +69,9 @@ const App = () => {
           <Route path='/admin/orderlist'>
             <OrderListScreen></OrderListScreen>
           </Route>
-
+          <Route path='/search/:keyword'>
+            <Home></Home>
+          </Route>
           <Route exact path='/'>
             <Home></Home>
           </Route>
