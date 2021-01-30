@@ -60,7 +60,10 @@ const App = () => {
           <Route path='/admin/user/:id/edit'>
             <UserEditScreen></UserEditScreen>
           </Route>
-          <Route path='/admin/productlist'>
+          <Route exact path='/admin/productlist'>
+            <ProductListScreen />
+          </Route>
+          <Route exact path='/admin/productlist/:pageNumber'>
             <ProductListScreen />
           </Route>
           <Route path='/admin/product/:id/edit'>
@@ -69,8 +72,14 @@ const App = () => {
           <Route path='/admin/orderlist'>
             <OrderListScreen></OrderListScreen>
           </Route>
-          <Route path='/search/:keyword'>
+          <Route exact path='/search/:keyword'>
             <Home></Home>
+          </Route>
+          <Route path='/page/:pageNumber' exact>
+            <Home />
+          </Route>
+          <Route path='/search/:keyword/page/:pageNumber'>
+            <Home />
           </Route>
           <Route exact path='/'>
             <Home></Home>
