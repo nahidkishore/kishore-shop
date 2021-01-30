@@ -5,10 +5,11 @@ import Product from './Product/Product';
 import { listProducts } from '../../../actions/productActions';
 import Loading from '../LoadingAndMessage/Loader';
 import Message from '../LoadingAndMessage/Message';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Paginate from '../Paginate/Paginate';
 import ProductCarousel from '../ProductCarousel/ProductCarousel';
-
+import { Helmet } from 'react-helmet';
+import Meta from '../Meta/Meta';
 const Home = () => {
   const { keyword, pageNumber } = useParams();
   const pageNumberParam = pageNumber || 1;
@@ -22,7 +23,14 @@ const Home = () => {
 
   return (
     <>
-    {!keyword && <ProductCarousel/>}
+      <Meta />
+      {!keyword ? (
+        <ProductCarousel />
+      ) : (
+        <Link to='/' className='btn btn-light'>
+          Go Back
+        </Link>
+      )}
       <h1>Latest products list here </h1>
       {loading ? (
         <Loading />
@@ -32,7 +40,14 @@ const Home = () => {
         <>
           <Row className='mb-4'>
             {products.map((product) => (
-              <Col key={product._id} sm={12} md={6} lg={4} xl={3} className="mb-2">
+              <Col
+                key={product._id}
+                sm={12}
+                md={6}
+                lg={4}
+                xl={3}
+                className='mb-2'
+              >
                 <Product product={product}></Product>
               </Col>
             ))}

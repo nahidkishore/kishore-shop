@@ -18,6 +18,7 @@ import {
 import Message from '../../LoadingAndMessage/Message';
 import Loading from '../../LoadingAndMessage/Loader';
 import { PRODUCT_CREATE_REVIEW_RESET } from '../../../../constants/productConstants';
+import Meta from '../../Meta/Meta';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -75,6 +76,7 @@ const ProductDetails = () => {
         <Message variant='danger'>{error}</Message>
       ) : (
         <>
+        <Meta title={product.name}/>
           <Row>
             <Col md={6}>
               <Image
