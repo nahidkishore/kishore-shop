@@ -19,6 +19,7 @@ import Message from '../../LoadingAndMessage/Message';
 import Loading from '../../LoadingAndMessage/Loader';
 import { PRODUCT_CREATE_REVIEW_RESET } from '../../../../constants/productConstants';
 import Meta from '../../Meta/Meta';
+import Loader from '../../LoadingAndMessage/Loader';
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -36,19 +37,22 @@ const ProductDetails = () => {
 
   const productReviewCreate = useSelector((state) => state.productReviewCreate);
   const {
-    error: errorProductReview,
     success: successProductReview,
+    loading: loadingProductReview,
+    error: errorProductReview,
   } = productReviewCreate;
   //console.log(productDetails);
 
   useEffect(() => {
     if (successProductReview) {
-      alert('successfully review Submitted');
+      /*  alert('successfully review Submitted'); */
       setRating(0);
       setComment('');
+    }
+    if (!product._id || product._id !== id) {
+      dispatch(listProductDetails(`${id}`));
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
     }
-    dispatch(listProductDetails(`${id}`));
   }, [dispatch, id, successProductReview]);
 
   const history = useHistory();
@@ -175,6 +179,12 @@ const ProductDetails = () => {
                 ))}
                 <ListGroup.Item>
                   <h2>Write a Customer review</h2>
+                  {successProductReview && (
+                    <Message variant='success'>
+                      Review Submitted successfully
+                    </Message>
+                  )}
+                  {loadingProductReview && <Loader />}
                   {errorProductReview && (
                     <Message variant='danger'>{errorProductReview}</Message>
                   )}
@@ -205,7 +215,11 @@ const ProductDetails = () => {
                           onChange={(e) => setComment(e.target.value)}
                         ></Form.Control>
                       </Form.Group>
-                      <Button type='submit' variant='primary'>
+                      <Button
+                        disabled={loadingProductReview}
+                        type='submit'
+                        variant='primary'
+                      >
                         Submit
                       </Button>
                     </Form>
