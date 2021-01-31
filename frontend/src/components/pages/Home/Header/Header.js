@@ -26,7 +26,7 @@ const Header = () => {
       <Navbar bg='dark' variant='dark' expand='lg'>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>Shop Pro</Navbar.Brand>
+            <Navbar.Brand>Kishore Shop</Navbar.Brand>
           </LinkContainer>
 
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
