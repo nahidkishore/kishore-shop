@@ -1,9 +1,9 @@
 
-# Shop Pro 
+# Kishore Shop
+[Website](https://kishore-shop.herokuapp.com/)
 
-#### continue working this project, I hope within 3days complete this project.
 
-## features
+## Features
 
 * Full featured shopping cart
 * Product reviews and ratings
@@ -20,7 +20,7 @@
 * Custom database seeder script
 
 
-## tools and Technologies
+## Tools and Technologies
 
 * React with Functional Components & Hooks
 * React router
@@ -38,17 +38,40 @@
 * Environment variables
 
 ## Screenshots
-![home](https://user-images.githubusercontent.com/39863835/105643221-be9ebe80-5eb8-11eb-93e4-7fdf0c260c94.jpg)
-![productDetails](https://user-images.githubusercontent.com/39863835/105643228-c4949f80-5eb8-11eb-8800-16a8ddfb8276.jpg)
-![shopping_cart](https://user-images.githubusercontent.com/39863835/105643232-c9f1ea00-5eb8-11eb-9bcb-a70c423fccb0.jpg)
-![profile](https://user-images.githubusercontent.com/39863835/106038585-56dbb400-6102-11eb-8b5a-1f6431f7097f.jpg)
-![payment_method](https://user-images.githubusercontent.com/39863835/106039051-d9fd0a00-6102-11eb-9ac2-a2f73719a2fc.jpg)
 
 
-![register](https://user-images.githubusercontent.com/39863835/105643239-ceb69e00-5eb8-11eb-954f-ebe731a1a5fd.jpg)
-![login](https://user-images.githubusercontent.com/39863835/105643241-d24a2500-5eb8-11eb-855b-a988ff7bdbff.jpg)
+![home](https://user-images.githubusercontent.com/39863835/106387091-49744180-6402-11eb-9083-7ae67f0bc51a.png)
 
-![cart](https://user-images.githubusercontent.com/39863835/105764925-d55d1800-5f81-11eb-9317-98df846cbe4c.jpg)
-![shipping](https://user-images.githubusercontent.com/39863835/105764993-ead24200-5f81-11eb-9dea-e4e0a017cfee.jpg)
-![payment](https://user-images.githubusercontent.com/39863835/105765017-f3c31380-5f81-11eb-89a1-88689d16a304.jpg)
-![placeOrder](https://user-images.githubusercontent.com/39863835/105765054-00e00280-5f82-11eb-8d33-3bb539ba94d7.jpg)
+![review-page](https://user-images.githubusercontent.com/39863835/106387098-53964000-6402-11eb-98cb-bdd42952fc6b.png)
+
+![cart](https://user-images.githubusercontent.com/39863835/106387110-5bee7b00-6402-11eb-9d94-b98256cbd660.jpg)
+
+![shipping](https://user-images.githubusercontent.com/39863835/106387135-850f0b80-6402-11eb-9df2-45f596049bb7.jpg)
+
+![payment-method](https://user-images.githubusercontent.com/39863835/106387149-98ba7200-6402-11eb-89da-1df09d90b062.jpg)
+
+![place-order](https://user-images.githubusercontent.com/39863835/106387157-9eb05300-6402-11eb-9fa5-e1924024e139.jpg)
+
+![payment-system](https://user-images.githubusercontent.com/39863835/106387168-ad970580-6402-11eb-9d9a-785b7ccca87c.jpg)
+
+![paypal-cart](https://user-images.githubusercontent.com/39863835/106387170-b12a8c80-6402-11eb-877f-3473bbd963c6.jpg)
+
+![payment-paid-by-customer](https://user-images.githubusercontent.com/39863835/106387176-b8519a80-6402-11eb-9cfd-4bd8068c411e.jpg)
+
+![orderlist-check](https://user-images.githubusercontent.com/39863835/106387186-cbfd0100-6402-11eb-995a-4a21bd2ad3ef.jpg)
+
+![confirm-delivered](https://user-images.githubusercontent.com/39863835/106387191-d4edd280-6402-11eb-94e2-e4b53c36dcc6.jpg)
+
+![delivered-confirm](https://user-images.githubusercontent.com/39863835/106387195-da4b1d00-6402-11eb-9029-6178bd4288e5.jpg)
+
+![customer-profile](https://user-images.githubusercontent.com/39863835/106387203-e46d1b80-6402-11eb-9c06-0b4d03302317.jpg)
+
+
+
+### Thank you for visiting my github profile... If you want to know more about me. You can contact with me.
+
+### [Portfolio-site](https://nahidul.netlify.app/)
+
+### Email: nahidkishore99@gmail.com
+### Phone: +8801776180002
+### Address: Dhaka, Bangladesh
