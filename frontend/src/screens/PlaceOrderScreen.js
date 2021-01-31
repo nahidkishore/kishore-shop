@@ -6,10 +6,17 @@ import CheckoutSteps from '../components/pages/Checkout/CheckoutSteps';
 import Message from '../components/pages/LoadingAndMessage/Message';
 import { createOrder } from '../actions/orderActions';
 import { ORDER_CREATE_RESET } from '../constants/orderConstants';
+import { USER_DETAILS_RESET } from '../constants/userConstants';
 const PlaceOrderScreen = () => {
   const history = useHistory();
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
+
+  if (!cart.shippingAddress.address) {
+    history.push('/shipping');
+  } else if (!cart.paymentMethod) {
+    history.push('/payment');
+  }
 
   //   Calculate prices
   const addDecimals = (num) => {
@@ -32,8 +39,9 @@ const PlaceOrderScreen = () => {
 
   useEffect(() => {
     if (success) {
-      history.push(`/order/${order._id}`)
-      dispatch({ type: ORDER_CREATE_RESET })
+      history.push(`/order/${order._id}`);
+      dispatch({ type: USER_DETAILS_RESET });
+      dispatch({ type: ORDER_CREATE_RESET });
     }
     // eslint-disable-next-line
   }, [history, success]);
@@ -48,8 +56,8 @@ const PlaceOrderScreen = () => {
         taxPrice: cart.taxPrice,
         totalPrice: cart.totalPrice,
       })
-    )
-  }
+    );
+  };
   return (
     <>
       <CheckoutSteps step1 step2 step3 step4 />

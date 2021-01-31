@@ -47,3 +47,9 @@ h2{
 .carousel a {
   margin: 0 auto;
 }
+
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}

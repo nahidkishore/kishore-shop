@@ -164,6 +164,7 @@ export const updateProduct = (product) => async (dispatch, getState) => {
       type: PRODUCT_UPDATE_SUCCESS,
       payload: data,
     });
+    dispatch({type:PRODUCT_DETAILS_SUCCESS, payload: data});
   } catch (error) {
     const message =
       error.response && error.response.data.message
