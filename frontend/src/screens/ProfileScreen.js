@@ -37,7 +37,7 @@ const ProfileScreen = () => {
       history.push('/login');
     } else {
       if (!user || !user.name || success) {
-        dispatch({ type: USER_UPDATE_PROFILE_RESET })
+        dispatch({ type: USER_UPDATE_PROFILE_RESET });
         dispatch(getUserDetails('profile'));
         dispatch(listMyOrders());
       } else {
@@ -45,7 +45,7 @@ const ProfileScreen = () => {
         setEmail(user.email);
       }
     }
-  }, [dispatch, history, userInfo, user,success]);
+  }, [dispatch, history, userInfo, user, success]);
 
   const submitHandler = (e) => {
     e.preventDefault();
