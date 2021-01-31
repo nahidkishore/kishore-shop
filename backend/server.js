@@ -42,7 +42,7 @@ if (process.env.NODE_ENV === 'production') {
   );
 } else {
   app.get('/', (req, res) => {
-    res.send('<h2>server is running bro</h2>');
+    res.send('<h3>server is running bro</h3>');
   });
 }
 
