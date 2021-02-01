@@ -60,11 +60,12 @@ const ProfileScreen = () => {
     <Row>
       <Col md={3}>
         <h2>User Profile</h2>
+        {success && <Message variant='success'>Profile updated </Message>}
         {message && <Message variant='danger'>{message}</Message>}
-        {}
-        {success && <Message variant='success'>Profile updated</Message>}
+       {loading && <Loader/>} 
+        
         {loading ? (
-          <Loading></Loading>
+         <Message variant='success'>Profile Successfully updated</Message> 
         ) : error ? (
           <Message variant='danger'>{error}</Message>
         ) : (
